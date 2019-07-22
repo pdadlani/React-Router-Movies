@@ -15,7 +15,6 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      {/* <div>Replace this Div with your Routes</div> */}
       <Switch>
         <Route path="/" exact component={MovieList} />
         <Route path="/movies/:id" component={Movie} />
