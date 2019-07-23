@@ -33,7 +33,7 @@ function MovieDetails({ movie }) {
   // const { title, director, metascore, stars } = movie;
   return (
     <Link to={`/movies/${movie.id}`} >
-      <MovieCard movie={movie} />
+      <MovieCard key={movie.id} movie={movie} />
     </Link>
   );
 }

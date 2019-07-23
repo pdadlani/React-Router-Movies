@@ -70,3 +70,7 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+.activeNavLink {
+  font-size: 1.3rem;
+}

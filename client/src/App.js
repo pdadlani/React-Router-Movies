@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import SavedList from './Movies/SavedList.js';
 import MovieList from './Movies/MovieList.js';
