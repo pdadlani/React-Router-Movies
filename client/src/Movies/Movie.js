@@ -5,6 +5,7 @@ import MovieCard from './MovieCard.js';
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   // changed above line, useState({}) to useState() to make it work.*********
+  // const [savedMovie, setSavedMovie] = useState(false);
   // console.log('props in Movie.js:', props);
   const id = props.match.params.id;
 
@@ -39,8 +40,8 @@ const Movie = (props) => {
   // const { title, director, metascore, stars } = movie;
   return (
     <div className="save-wrapper">
-      <MovieCard movie={movie} />
-      <div className="save-button">Save</div>
+      <MovieCard key={movie.id} movie={movie} />
+      <div onClick={() => props.addToSavedList(movie)} className="save-button">Save</div>
     </div>
   );
 }
